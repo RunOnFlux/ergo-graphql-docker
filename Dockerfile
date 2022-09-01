@@ -9,7 +9,7 @@ RUN curl -L https://github.com/capt-nemo429/ergo-graphql/archive/refs/tags/v$VER
 WORKDIR /app
 RUN npm install && npm run build
 
-COPY ./graphql/explorer-backend.conf ./explorer-backend.conf
+COPY ./explorer-backend.conf ./explorer-backend.conf
 
 CMD ["npm", "run", "start"]
 EXPOSE 3000
