@@ -9,18 +9,18 @@ Install [Docker](https://docs.docker.com/engine/install/) and follow the below i
 # Latest version can be found at [Ergo-GraphQL](https://github.com/capt-nemo429/ergo-graphql/tags)
 ARG VERSION="0.3.5"
 
-# Build the image and tag it as "flux-ergo-graphql"
-docker build . -t flux-ergo-graphql
+# Build the image and tag it as "ergo-graphql"
+docker build . -t ergo-graphql
 
 # Log in to Docker-Hub with your username and password
 docker login -u your-username
 
 # Tag the image with the Docker-Hub repo tag
-docker tag flux-ergo-graphql runonflux/flux-ergo-graphql:latest
+docker tag ergo-graphql runonflux/ergo-graphql:latest
 
 # Push the image to Docker-Hub (each layer may take a few mins to push)
-docker push runonflux/flux-ergo-graphql:latest
+docker push runonflux/ergo-graphql:latest
 
 # Use the image in FluxOS or in your Docker-Compose file
-runonflux/flux-ergo-graphql:latest
+runonflux/ergo-graphql:latest
 ```
